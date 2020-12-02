@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Fifteen Puzzle</title>
+	<script src="fifteen.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/fifteen.css">
+</head>
+<body class="main">
+	<script type="text/javascript"> 
+		window.onload = function () { start_game(); }
+		const music = new sound("sounds/timing.mp3");
+	</script>
+	<h1>Fifteeen Puzzle</h1>
+
+	<p>
+		The goal of the fifteen puzzle is to un-scramble the fifteen squares
+	 	by repeatedly making moves that slide squares into the empty space. How
+	 	quickly can you solve it?
+	</p>
+
+	<div id="timer"></div>
+	<div id="game"></div>
+	<div id="interface" class="buttons">
+		<input type="button" id="shuffle" value="Shuffle" onclick="shuffle_tiles()">
+		<p id="test"></p> <!-- this can be removed when done !-->
+	</div>
+	<div id="win"></div>
+	<div id="overview">
+		<p id="total_moves"></p>
+		<p id="total_time"></p>
+        		<p id="best"></p>
+
+	</div>
+
+	<p>
+		American puzzle author and mathematician Sam Loyd is often falsely credited with creating the puzzle; indeed,
+		Loyd claimed from 1891 until his death death in 1911 that he invented it. The puzzle was actually created around 
+		1874 by Nayes Palmer Champman, a postmaster in Canastota, New York.
+	</p>
+
+	<div id="validator">
+		<a href="https://validator.w3.org/"><img src="images/w3c-xhtml.png" alt="w3c html"></a>
+		<a href="https://jigsaw.w3.org/css-validator/"><img src="images/w3c-css.png" alt="w3c css"></a>
+		<!--  <a href="https://validator.w3.org/"><img src="W3JS"></a>  !-->
+	</div>
+
+</body>
+</html>
+<!-- 
+Extra Feature used
+Animation : Sliding motion of tiles when a moveable tile is clicked. 
+Animation : Puzzle changing to winning image with style changes if game is won
+
+Game Time With Music File: Music plays at the 5 minute mark.
+
+End of Game Notification: Once game is won, a “You Won” notification appears with total moves taken, total time taken, and the best time so far
+ -->

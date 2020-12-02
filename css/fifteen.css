@@ -1,0 +1,72 @@
+h1, 
+#timer,
+#overview,
+#win_text,
+input[type="button"], 
+.buttons{
+	text-align: center;
+}
+
+#puzzle,
+#game {
+	width: 400px;
+}
+
+.buttons{
+	margin-top: 1em;
+}
+
+#game{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#puzzle{
+	font-size: 32px;
+	height: 400px;
+	padding: 0px;
+	position: relative;
+}
+
+
+.blockedTile,
+.freeTile,
+.puzzleTile {
+	border: 2px solid black;
+	height: 96px;
+	width: 96px;
+	line-height: 96px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.blockedTile,
+.freeTile {
+	text-decoration: underline;
+}
+
+.blockedTile {
+	border: 2px solid red;
+	color: #ff0008;
+}
+
+.freeTile {
+	border: 2px solid green;
+	color: #229103;
+}
+
+#validator {
+	text-align: right;
+}
+#win{
+    text-align: center; 
+    font-size: 50pt;
+    background-color: paleturquoise;
+    background-size: 400px 300px;
+}
+.main{
+    background-color: aliceblue;
+    font-family: sans-serif, Roboto;
+    font-size: 15pt;
+}
